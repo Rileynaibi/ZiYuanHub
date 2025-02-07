@@ -1,0 +1,210 @@
+/* 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #1a1a1a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* 顶栏样式 */
+.navbar {
+  background: #3a3a3a;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  color: #007acc;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #00b3ee;
+}
+
+.nav a.active {
+  color: #00b3ee;
+  text-decoration: underline;
+}
+
+/* 主体内容 */
+.main {
+  padding: 70px 20px 20px;
+}
+
+.category {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #00b3ee;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 5px;
+}
+
+/* 下载项布局 */
+.downloads {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.download-item {
+  background: #3a3a3a;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.download-item:hover {
+  border: 1px solid #00b3ee;
+  transform: translateY(-1px);
+}
+
+.system-icon, .software-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 4px;
+}
+
+.item-info {
+  flex-grow: 1;
+}
+
+.item-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.item-info p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #007acc;
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #005a99;
+  transform: translateY(-1px);
+}
+
+/* Windows 专用布局 */
+#windows .downloads {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* 页脚 */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #3a3a3a;
+  margin-top: 30px;
+  border-top: 1px solid #4a4a4a;
+  position: relative;
+}
+
+.footer p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .site-name {
+    font-size: 1.3rem;
+  }
+
+  .nav ul {
+    gap: 10px;
+  }
+
+  .main {
+    padding: 60px 10px 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .downloads {
+    gap: 10px;
+  }
+
+  .item-info p {
+    margin-bottom: 5px;
+  }
+
+  .download-btn {
+    padding: 5px 10px;
+  }
+}
+
+.gd {
+  height: 15px;
+  width: 100%;
+  color: black; /* 添加字体颜色为黑色 */
+}
