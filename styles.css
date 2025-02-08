@@ -206,5 +206,11 @@ h2 {
 .gd {
   height: 15px;
   width: 100%;
-  color: black; /* 添加字体颜色为黑色 */
+  
+}
+
+}
+.tb{
+  height: 30px;
+  width: 100%
 }
