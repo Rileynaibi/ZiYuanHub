@@ -265,3 +265,16 @@ h2 {
   height: 30px;
   width: 100%
 }
+
+
+
+.dhzs {
+  color: #007acc;      /* 文字颜色 */
+  font-size: 20px;     /* 文字大小 */
+  
+  /* 以下是可选的常用文字属性（可根据需要添加） */
+  font-family: Arial, sans-serif;  /* 字体 */
+  font-weight: normal;  /* 粗细（normal=常规 / bold=加粗）*/
+  line-height: 1.5;     /* 行高（1.5倍字体高度） */
+  text-decoration: none; /* 装饰线（none=无/underline=下划线） */
+}
