@@ -24,3 +24,16 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
             text-align: center;
             color: #333;
         }
+
+
+
+ // 初始化访问人数（使用 localStorage 保存数据）
+        let visitorCount = localStorage.getItem("visitorCounter") || 0;
+        visitorCount = parseInt(visitorCount, 10); // 确保是数字格式
+        visitorCount++;
+
+        // 更新 localStorage 中的访问人数
+        localStorage.setItem("visitorCounter", visitorCount);
+
+        // 渲染访问人数到前端页面
+        document.getElementById("visitorCount").textContent = visitorCount;
