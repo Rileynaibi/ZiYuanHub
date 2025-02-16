@@ -40,6 +40,19 @@
         <li><a href="#linux">Linux</a></li>
         <li><a href="#software">软件</a></li>
          <li><a href="https://www.openufs.com/">已访问：<span id="visitorCount">0</span> 次</a></li>
+        
+    <script>
+        // 初始化访问人数（使用 localStorage 保存数据）
+        let visitorCount = localStorage.getItem("visitorCounter") || 0;
+        visitorCount = parseInt(visitorCount, 10); // 确保是数字格式
+        visitorCount++;
+
+        // 更新 localStorage 中的访问人数
+        localStorage.setItem("visitorCounter", visitorCount);
+
+        // 渲染访问人数到前端页面
+        document.getElementById("visitorCount").textContent = visitorCount;
+    </script>
       </ul>
     </nav>
   </header>
