@@ -17,3 +17,10 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
     searchPage();
   }
 });
+
+.visitor-count {
+            margin-top: 2rem;
+            font-size: 2rem;
+            text-align: center;
+            color: #333;
+        }
