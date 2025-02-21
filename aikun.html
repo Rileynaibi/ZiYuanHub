@@ -6,6 +6,305 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #e9f4d5;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display: table;
+}
+.clearfix::after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+}
+/* 申明版心类，只要像放到中间调用即可 */
+.w {
+    width: 1200px;
+    margin: 0  auto;
+}
+/* 只是写错了 */
+.s {
+    width: 1200px;
+    margin: 0  auto;
+}
+/* 只要是页面中的所有li都要清除样式 */
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    height: 52px;
+    background-color: #D6EFA8;
+    margin: 30px auto;
+}
+.logo {
+    float: left;
+    width: 133px;
+    height: 52px;
+    background-color: purple;
+}
+.nav {
+    float: left;
+    margin-left: 60px;
+}
+.nav ul li {
+    float: left;
+    margin-right: 20px;
+    padding: 13px;
+    border: 1px solid lightblue;
+ 
+}
+.nav ul li a {
+    font-size: 18px;
+    color: black;
+}
+.nav ul li:hover {
+    border-bottom: 3px solid lightblue;
+}
+.search {
+    float: left;
+    /* search的width是412px */
+    width: 412px;
+    height: 52px;
+    background-color: #ceed94;
+    margin-left: 50px;
+}
+.search input {
+    float: left;
+    /* input的width是345px */
+    width: 345px;
+    height: 47px;
+   border: 2px solid #ceed94;
+   color: #bfbfbf;
+   font-size: 14px;
+   padding-left: 15px;
+}
+.search button {
+    float: left;
+    /* 那为什么button的width是50px就会掉下来了 */
+    width: 45px;
+    height: 52px;
+    background: url(./image/ikunsearch.png);
+    /* 按钮有边框需要手动取出 */
+    border: 0;
+}
+div .user {
+    float: left;
+    line-height: 52px;
+    margin-left: 50px;
+}
+div p {
+    float: right;
+    margin-left: 20px;
+}
+.banner {
+    height: 421px;
+    background-color: #B3CBEF;
+ 
+}
+.banner .w {
+    height: 421px;
+    background-image: url(./image/handsome.jpg);
+    background-repeat: no-repeat top center;
+    background-size: 1200px 421px;
+}
+.subnav {
+    float: left;
+    width: 190px;
+    height: 421px;
+    background: rgba(172, 211, 240, .5);
+}
+.w .subnav ul li a {
+    font-size: 20px;
+    color:rgb(116, 118, 120);
+}
+.w .subnav ul li {
+    /* background-color: rgb(172, 211, 240); */
+    height: 47px;
+    padding: 0 20px;
+}
+.w .subnav ul li:hover {
+    background: #ceed94;
+}
+.subnav ul li a span {
+    float: right;
+}
+.course {
+    float: right;
+    margin-top: 50px;
+    width: 230px;
+    height: 340px;
+    background-color: rgba(172, 211, 240,.3);
+}
+.course h2 {
+    height: 48px;
+    background-color: rgba(172, 211, 240);
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+.bd {
+    padding: 0 20px;
+}
+.course .bd ul li {
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+}
+.course .bd ul li h4{
+    padding-left: 20px;
+    color: #4e4e4e;
+}
+.course .bd ul li:hover {
+    background-color: #ceed94;
+}
+.course .bd ul li p {
+    float: left;
+    color: #a5a5a5;
+ 
+}
+.course .bd ul li p .last {
+    margin-bottom: 30px;
+}
+.course .bd   a {
+        display: block;
+        border:1px solid  rgb(123, 187, 236);
+        padding-left: 20px;
+        color: whitesmoke;
+        height: 38px;
+        line-height: 38px;
+        font-size: 16px;
+}
+.goods {
+    height: 60px;
+    background-color:whitesmoke; 
+    box-shadow: 0 4px 3px 3px rgba(0,0,0,.3);
+    margin-top: 10px;
+    line-height: 60px;
+}
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    color: #cfe5a7;
+}
+.goods ul {
+    float: left;
+}
+.goods ul li {
+    float: left;
+}
+.goods ul li a {
+    padding: 0 30px;
+    color: #050505;
+    border-left: 2px solid #ceed94 ;
+}
+.mod {
+    float: right;
+    margin-right: 30px;
+    color: #cfe5a7;
+}
+.box {
+    margin-top: 30px;
+}
+.box-hd {
+    height: 45px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.box-bd ul  {
+    width: 1225px;
+}
+.box-bd ul li {
+    float: left;
+    width: 225px;
+    height: 320px;
+    background-color: whitesmoke;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.box-bd ul li img {
+    width: 100%;
+    height: 200px;
+}
+.box-bd ul li h4 {
+    margin: 20px 20px 20px 25px;
+    font-size: 14px;
+    color: plum;
+    /* 给定标题不加粗 */
+    font-weight: 400;
+ 
+}
+.box-bd ul li .info {
+    margin-left: 20px;
+    color: #999;
+    font-size: 12px;
+}
+.footer {
+    height: 415px;
+    background-color:  #D6EFA8;
+}
+.footer .s {
+    padding-top: 35px;
+}
+.footer .s .copyleft img {
+    width: 300px;
+    height: 200px;
+}
+.copyleft {
+    float: left;
+}
+.link {
+    float: right;
+}
+.footer .s .copyleft  .name {
+    float: none;
+    font-size: 12px;
+    color: #666;
+    margin: 20px 0 15px 0 ;;
+}
+.footer .s .copyleft .app {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 2px solid #00a4ff;
+    line-height: 33px;
+    color:#00a4ff ;
+    text-align: center;
+    font-size: 16px;
+   
+}
+.link dl {
+    float: left;
+}
+.link dl dt {
+    margin-right: 150px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.link dl dd a {
+    font-size: 12px;
+    color: #333;
+}
+ 
+    </style>
 </head>
 <body>
     <!-- 整体思路就是一个一个标准流写好了，在使用float来实现每行的效果。 -->
