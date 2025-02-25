@@ -13,14 +13,18 @@
   <link rel="shortcut icon" href="/favicon.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-   <style>
-        .visitor-count {
-            margin-top: 2rem;
-            font-size: 2rem;
-            text-align: center;
-            color: #333;
-        }
-    </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "资源酷-ZiYuanHub",
+      "description": "提供免费的系统镜像和软件下载，包括Windows、Linux系统镜像以及常用软件。",
+      "url": "https://www.openufs.com",
+      "image": "https://www.openufs.com/logo.png",
+      "keywords": "系统镜像, 软件下载, Windows, Linux, 免费下载",
+      "operatingSystem": "Windows, Linux"
+    }
+  </script>
 </head>
 <body>
   <header class="navbar">
@@ -28,38 +32,29 @@
       <img src="img/logo.png" alt="下载站 Logo" class="logo">
       <h1 class="site-name">资源酷-ZiYuanHub</h1>
     </div>
-    <!-- 添加搜索框 -->
     <div class="search-container">
       <input type="text" id="searchInput" placeholder="输入搜索内容...">
       <button class="search-button" onclick="searchPage()">搜索</button>
     </div>
-    <nav class="nav">
+    <nav class="nav" id="mainNav">
       <ul>
         <li><a href="#" class="active">首页</a></li>
         <li><a href="#windows">Windows</a></li>
         <li><a href="#linux">Linux</a></li>
         <li><a href="#software">软件</a></li>
-         <li><a href="https://www.openufs.com/">已访问：<span id="visitorCount">0</span> 次</a></li>
-        
-    <script>
-        // 初始化访问人数（使用 localStorage 保存数据）
-        let visitorCount = localStorage.getItem("visitorCounter") || 0;
-        visitorCount = parseInt(visitorCount, 10); // 确保是数字格式
-        visitorCount++;
-
-        // 更新 localStorage 中的访问人数
-        localStorage.setItem("visitorCounter", visitorCount);
-
-        // 渲染访问人数到前端页面
-        document.getElementById("visitorCount").textContent = visitorCount;
-    </script>
+        <li><a href="https://www.openufs.com/">已访问：<span id="visitorCount">0</span> 次</a></li>
       </ul>
     </nav>
+    <div class="hamburger" id="hamburgerMenu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
   </header>
 
   <main class="main">
     <div class="tb"></div>
-     <p class="dhzs">在这里你可以快速下载各种电脑软件和系统镜像|Ctrl+D收藏本站，使用时请遵守相关法律法规！</p>
+    <p class="dhzs">在这里你可以快速下载各种电脑软件和系统镜像|Ctrl+D收藏本站，使用时请遵守相关法律法规！</p>
     <p class="dhzs">本站官方交流群：<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=9-5VI0U0Ju-Jnn2KgcxMOgLFb3dljXKY&authKey=1K55fZt%2BKB01HeAQs7nY6SCz2A0tZXyShzfqF5kXFEjSJyJ1DCX2jRmm%2FCIkkBk5&noverify=0&group_code=727496785" style="color: aliceblue;">QQ</a>欢迎您加入</p> 
     <section class="category" id="windows">
       <h2>系统镜像 - Windows 系列</h2>
@@ -84,26 +79,28 @@
       </div>
       
       <div class="gd"></div>
-      <div class="download-item">
-        <img src="img/win8.png" alt="Windows 18" class="system-icon">
-        <div class="item-info">
-          <h3>Windows 8</h3>
-          <p>文件大小：4.2GB | 语言：简体中文</p>
+      <div class="downloads">
+        <div class="download-item">
+          <img src="img/win8.png" alt="Windows 18" class="system-icon">
+          <div class="item-info">
+            <h3>Windows 8</h3>
+            <p>文件大小：4.2GB | 语言：简体中文</p>
+          </div>
+          <a href="https://pan.xunlei.com/s/VOITr-U5vikTjA4jSDND5522A1?pwd=9i2j" download class="download-btn" target="_blank">下载</a>
         </div>
-        <a href="https://pan.xunlei.com/s/VOITr-U5vikTjA4jSDND5522A1?pwd=9i2j" download class="download-btn" target="_blank">下载</a>
       </div>
-    </div>
 
-    <div class="gd"></div>
-    <div class="download-item">
-      <img src="img/Windows Server.png" alt="Windows Server" class="system-icon">
-      <div class="item-info">
-        <h3>Windows Server 2022</h3>
-        <p> 文件大小：5.7GB | 语言：简体中文 | 服务器</p>
+      <div class="gd"></div>
+      <div class="downloads">
+        <div class="download-item">
+          <img src="img/Windows Server.png" alt="Windows Server" class="system-icon">
+          <div class="item-info">
+            <h3>Windows Server 2022</h3>
+            <p> 文件大小：5.7GB | 语言：简体中文 | 服务器</p>
+          </div>
+          <a href="https://pan.xunlei.com/s/VOITrFO_0qhO14ePW8Q2GhQbA1?pwd=tzfg" download class="download-btn" target="_blank">下载</a>
+        </div>
       </div>
-      <a href="https://pan.xunlei.com/s/VOITrFO_0qhO14ePW8Q2GhQbA1?pwd=tzfg" download class="download-btn" target="_blank">下载</a>
-    </div>
-  </div>
     </section>
 
     <section class="category" id="linux">
