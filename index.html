@@ -1,434 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-  <meta name="sogou_site_verification" content="0PZjH6TbTV" />
-  <meta name="description" content="Riley下载站提供免费的系统镜像和软件下载，包括Windows、Linux系统镜像以及常用软件。全站无毒无广告，可放心下载。">
-  <meta name="keywords" content="系统镜像, 软件下载, Windows, Linux, 免费下载, Riley下载站">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Type" content="text/html;charset=gb2312" />
-  <meta name="sogou_site_verification" content="2VMtvjTrNi" />
-  <meta name="sogou_site_verification" content="2VMtvjTrNi" />
-  <title>资源酷 - ZiYuanHub-在这里你可以下载到各种软件和系统镜像！</title>
-  <link rel="shortcut icon" href="/favicon.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "资源酷-ZiYuanHub",
-      "description": "提供免费的系统镜像和软件下载，包括Windows、Linux系统镜像以及常用软件。",
-      "url": "https://www.openufs.com",
-      "image": "https://www.openufs.com/logo.png",
-      "keywords": "系统镜像, 软件下载, Windows, Linux, 免费下载",
-      "operatingSystem": "Windows, Linux"
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ZiYuanHub提供纯净安全的Windows系统镜像、Linux发行版及常用软件下载，全站无广告、绿色安全。">
+    <meta name="keywords" content="Windows系统下载,Linux镜像,软件下载,纯净系统,VSCode下载,Steam客户端,Python安装包">
+    <title>ZiYuanHub - 资源酷</title>
+    
+    <!-- SEO优化 -->
+    <meta property="og:title" content="ZiYuanHub - 安全纯净的系统镜像与软件下载站">
+    <meta property="og:description" content="提供最新Windows、Linux系统镜像和开发工具下载">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.itxueba.com">
+    <link rel="canonical" href="https://www.itxueba.com">
+    
+    <!-- 样式表 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://ox.cyou/stylez.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 原有内联样式 -->
+    <style>
+        body { background-color: #1e1e1e; color: #d4d4d4; }
+        .navbar { background-color: #333; }
+        .card { background-color: #333; border: 1px solid #444; border-radius: 8px; }
+        .btn-primary { background-color: #0078d7; border-color: #0078d7; }
+        .btn-primary:hover { background-color: #00579f; border-color: #00579f; }
+        .search-input { background-color: #444; border: 1px solid #555; color: #fff; border-radius: 4px; }
+        .navbar-logo {
+            height: 30px;  /* 控制logo高度 */
+            margin-right: 10px;  /* logo与文字的间距 */
+            vertical-align: middle;  /* 垂直对齐 */
+        }
+    </style>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo-container">
-      <img src="img/logo.png" alt="下载站 Logo" class="logo">
-      <h1 class="site-name">资源酷-ZiYuanHub</h1>
-    </div>
-    <div class="search-container">
-      <input type="text" id="searchInput" placeholder="输入搜索内容...">
-      <button class="search-button" onclick="searchPage()">搜索</button>
-    </div>
-    <nav class="nav" id="mainNav">
-      <ul>
-        <li><a href="#" class="active">首页</a></li>
-        <li><a href="#windows">Windows</a></li>
-        <li><a href="#linux">Linux</a></li>
-        <li><a href="#software">软件</a></li>
-        <li><a href="https://www.openufs.com/">已访问：<span id="visitorCount">0</span> 次</a></li>
-      </ul>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          
+            <a class="navbar-brand" href="/"><img src="img/logo.png" alt="网站Logo" class="navbar-logo">ZiYuanHub - 资源酷</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#software">软件</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#windows">Windows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#linux">Linux</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://ti.cyou/about.html">关于我们</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.openufs.com/">已访问：<span id="visitorCount">998</span> 次</a></li>
+                    
+                </ul>
+            </div>
+        </div>
     </nav>
-    <div class="hamburger" id="hamburgerMenu">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </header>
 
-  <main class="main">
+    <!-- 间距元素 -->
     <div class="tb"></div>
-    <p class="dhzs">在这里你可以快速下载各种电脑软件和系统镜像|Ctrl+D收藏本站，使用时请遵守相关法律法规！</p>
-    <p class="dhzs">本站官方交流群：<a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=9-5VI0U0Ju-Jnn2KgcxMOgLFb3dljXKY&authKey=1K55fZt%2BKB01HeAQs7nY6SCz2A0tZXyShzfqF5kXFEjSJyJ1DCX2jRmm%2FCIkkBk5&noverify=0&group_code=727496785" style="color: aliceblue;">QQ</a>欢迎您加入</p> 
-    <section class="category" id="windows">
-      <h2>系统镜像 - Windows 系列</h2>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/win10.png" alt="Windows 10" class="system-icon">
-          <div class="item-info">
-            <h3>Windows 10 </h3>
-            <p>文件大小：5.7GB | 语言：简体中文</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOITb0dcYTICgCav6AuKf9sZA1?pwd=8qn4#" download class="download-btn" target="_blank">下载</a>
+    <div class="tb"></div>
+
+    <!-- 搜索框 -->
+    <main class="container my-4">
+        <h2 style="color: white; text-align: center;">常用软件 各类纯净操作系统</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group mb-4">
+                    <input type="text" id="search-input" class="form-control search-input" placeholder="搜索软件或系统镜像">
+                </div>
+            </div>
         </div>
+    </main>
 
-        <div class="download-item">
-          <img src="img/win11.png" alt="Windows 11" class="system-icon">
-          <div class="item-info">
-            <h3>Windows 11</h3>
-            <p>文件大小：5.2GB | 语言：简体中文</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOITcQSMpKKuOc9K2SrvEV8fA1?pwd=mvxs" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
-      
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/win8.png" alt="Windows 18" class="system-icon">
-          <div class="item-info">
-            <h3>Windows 8</h3>
-            <p>文件大小：4.2GB | 语言：简体中文</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOITr-U5vikTjA4jSDND5522A1?pwd=9i2j" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+    <!-- 全部内容 -->
+    <main class="container">
+        <!-- Windows系统（单列布局） -->
+        <section class="category" id="windows">
+            <h2 style="color: white;">系统镜像 - Windows 系列</h2>
+            <div class="downloads">
+                <div class="download-item">
+                    <img src="img/win10.png" alt="Windows 10" class="system-icon">
+                    <div class="item-info">
+                        <h3>Windows 10</h3>
+                        <p>文件大小：5.7GB | 语言：简体中文</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOITb0dcYTICgCav6AuKf9sZA1?pwd=8qn4#" download class="download-btn" target="_blank">下载</a>
+                </div>
+            </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/Windows Server.png" alt="Windows Server" class="system-icon">
-          <div class="item-info">
-            <h3>Windows Server 2022</h3>
-            <p> 文件大小：5.7GB | 语言：简体中文 | 服务器</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOITrFO_0qhO14ePW8Q2GhQbA1?pwd=tzfg" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
-    </section>
+            <div class="gd"></div>
+            <div class="downloads">
+                <div class="download-item">
+                    <img src="img/win11.png" alt="Windows 11" class="system-icon">
+                    <div class="item-info">
+                        <h3>Windows 11</h3>
+                        <p>文件大小：5.2GB | 语言：简体中文</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOITcQSMpKKuOc9K2SrvEV8fA1?pwd=mvxs" download class="download-btn" target="_blank">下载</a>
+                </div>
+            </div>
 
-    <section class="category" id="linux">
-      <h2>系统镜像 - Linux 发行版</h2>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/ubuntu.png" alt="Ubuntu" class="system-icon">
-          <div class="item-info">
-            <h3>Ubuntu 24.04 LTS</h3>
-            <p> 文件大小：5.3GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOITcgxjiLLvIqKptg8vF8XnA1?pwd=bf8i" download class="download-btn" target="_blank">下载</a>
-        </div>
+            <div class="gd"></div>
+            <div class="downloads">
+                <div class="download-item">
+                    <img src="img/win8.png" alt="Windows 8" class="system-icon">
+                    <div class="item-info">
+                        <h3>Windows 8</h3>
+                        <p>文件大小：4.2GB | 语言：简体中文</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOITr-U5vikTjA4jSDND5522A1?pwd=9i2j" download class="download-btn" target="_blank">下载</a>
+                </div>
+            </div>
 
-        <div class="download-item">
-          <img src="img/cen.png" alt="CentOS" class="system-icon">
-          <div class="item-info">
-            <h3>CentOS 8 Stream</h3>
-            <p>文件大小：0.9GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOITcucRQAquUn3GE7eiuxA5A1?pwd=tr3e" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/Debian.png" alt="Debian" class="system-icon">
-          <div class="item-info">
-            <h3>Debian</h3>
-            <p>文件大小：0.3 GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOITodqUJLO68GBaGzkj-f1LA1?pwd=rcmq" download class="download-btn" target="_blank">下载</a>
-        </div>
+            <div class="gd"></div>
+            <div class="downloads">
+                <div class="download-item">
+                    <img src="img/Windows Server.png" alt="Windows Server 2022" class="system-icon">
+                    <div class="item-info">
+                        <h3>Windows Server 2022</h3>
+                        <p>文件大小：5.7GB | 语言：简体中文 | 服务器</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOITrFO_0qhO14ePW8Q2GhQbA1?pwd=tzfg" download class="download-btn" target="_blank">下载</a>
+                </div>
+            </div>
+        </section>
 
-        <div class="download-item">
-          <img src="img/archlinux.png" alt="ArchLinux" class="system-icon">
-          <div class="item-info">
-            <h3>ArchLinux Stream</h3>
-            <p>文件大小：0.8GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOITpFZ9PGBy3HLG3a7-BJKWA1?pwd=u9s3" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
-    
+        <!-- Linux系统（双列布局） -->
+        <section class="category" id="linux">
+            <h2 style="color: white;">系统镜像 - Linux 发行版</h2>
+            <div class="downloads">
+                <div class="download-item">
+                    <img src="img/ubuntu.png" alt="Ubuntu" class="system-icon">
+                    <div class="item-info">
+                        <h3>Ubuntu 24.04 LTS</h3>
+                        <p>文件大小：5.3GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOITcgxjiLLvIqKptg8vF8XnA1?pwd=bf8i" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/kali.png" alt="KALI" class="system-icon">
-          <div class="item-info">
-            <h3>KALI Linux</h3>
-            <p>文件大小：0.3 GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOI_Jja1hZeQCBpWurAmffYQA1?pwd=rqny#" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/cen.png" alt="CentOS" class="system-icon">
+                    <div class="item-info">
+                        <h3>CentOS 8 Stream</h3>
+                        <p>文件大小：0.9GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOITcucRQAquUn3GE7eiuxA5A1?pwd=tr3e" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/hxos2.png" alt="Red star" class="system-icon">
-          <div class="item-info">
-            <h3>红星OS|Red star</h3>
-            <p> 文件大小：2.3 GB | 语言：韩语</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIn05zcGjFJSnkYU4ea2oP1A1?pwd=3hv2#" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/Debian.png" alt="Debian" class="system-icon">
+                    <div class="item-info">
+                        <h3>Debian</h3>
+                        <p>文件大小：0.3 GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOITodqUJLO68GBaGzkj-f1LA1?pwd=rcmq" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/parro.png" alt="Parrotsec" class="system-icon">
-          <div class="item-info">
-            <h3>Parrotsec OS</h3>
-            <p>文件大小：4.8 GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIilxVhh6Cmmnb8x3nptccuA1?pwd=gdm4#" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/archlinux.png" alt="ArchLinux" class="system-icon">
+                    <div class="item-info">
+                        <h3>ArchLinux Stream</h3>
+                        <p>文件大小：0.8GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOITpFZ9PGBy3HLG3a7-BJKWA1?pwd=u9s3" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/kylin.png" alt="Kylin" class="system-icon">
-          <div class="item-info">
-            <h3>Kylin 麒麟</h3>
-            <p> 文件大小：4.1 GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIj1gnFfR_fAy_ieOzqzX4yA1?pwd=3yf3#" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/kali.png" alt="KALI" class="system-icon">
+                    <div class="item-info">
+                        <h3>KALI Linux</h3>
+                        <p>文件大小：0.3 GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOI_Jja1hZeQCBpWurAmffYQA1?pwd=rqny#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/deepin.png" alt="DeePin" class="system-icon">
-          <div class="item-info">
-            <h3>DeePin 深度</h3>
-            <p>文件大小：4.8 GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIirJWV-6IjzWB2B8ICiwYKA1?pwd=xtfh#" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/hxos2.png" alt="Red star" class="system-icon">
+                    <div class="item-info">
+                        <h3>红星OS|Red star</h3>
+                        <p>文件大小：2.3 GB | 语言：韩语</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIn05zcGjFJSnkYU4ea2oP1A1?pwd=3hv2#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/rockylinux.png" alt="Rocky" class="system-icon">
-          <div class="item-info">
-            <h3>Rocky Linux</h3>
-            <p> 文件大小：1.8 GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIj3YADWekiRry8--AV0wJOA1?pwd=q4zi#" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/parro.png" alt="Parrotsec" class="system-icon">
+                    <div class="item-info">
+                        <h3>Parrotsec OS</h3>
+                        <p>文件大小：4.8 GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIilxVhh6Cmmnb8x3nptccuA1?pwd=gdm4#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/wubt.png" alt="Wubuntu" class="system-icon">
-          <div class="item-info">
-            <h3>Wubuntu</h3>
-            <p>文件大小：4.3 GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIj2p_9mFRabqIyl_1C5zrCA1?pwd=hvnb#" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/kylin.png" alt="Kylin" class="system-icon">
+                    <div class="item-info">
+                        <h3>Kylin 麒麟</h3>
+                        <p>文件大小：4.1 GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIj1gnFfR_fAy_ieOzqzX4yA1?pwd=3yf3#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/puppy.png" alt="puppy" class="system-icon">
-          <div class="item-info">
-            <h3>Puppy Linux</h3>
-            <p> 文件大小：0.7GB | 语言：多语言</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIjCEnC2Pr6x7kwwNW3hqeiA1?pwd=sjsa#" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
-    </section>
+                <div class="download-item">
+                    <img src="img/deepin.png" alt="DeePin" class="system-icon">
+                    <div class="item-info">
+                        <h3>DeePin 深度</h3>
+                        <p>文件大小：4.8 GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIirJWV-6IjzWB2B8ICiwYKA1?pwd=xtfh#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-    <section class="category" id="software">
-      <h2>常用软件</h2>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/vscode.png" alt="VSCode" class="software-icon">
-          <div class="item-info">
-            <h3>VSCode 1.80</h3>
-            <p>文件大小：160MB | 平台：Windows</p>
-          </div>
-          <a href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/rockylinux.png" alt="Rocky" class="system-icon">
+                    <div class="item-info">
+                        <h3>Rocky Linux</h3>
+                        <p>文件大小：1.8 GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIj3YADWekiRry8--AV0wJOA1?pwd=q4zi#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/steam.png" alt="steam" class="software-icon">
-          <div class="item-info">
-            <h3>Steam</h3>
-            <p>文件大小：2.4MB | 平台：Windows</p>
-          </div>
-          <a href="https://www.openufs.com/SteamSetup.exe" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/wubt.png" alt="Wubuntu" class="system-icon">
+                    <div class="item-info">
+                        <h3>Wubuntu</h3>
+                        <p>文件大小：4.3 GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIj2p_9mFRabqIyl_1C5zrCA1?pwd=hvnb#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
+                <div class="download-item">
+                    <img src="img/puppy.png" alt="puppy" class="system-icon">
+                    <div class="item-info">
+                        <h3>Puppy Linux</h3>
+                        <p>文件大小：0.7GB | 语言：多语言</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIjCEnC2Pr6x7kwwNW3hqeiA1?pwd=sjsa#" download class="download-btn" target="_blank">下载</a>
+                </div>
+            </div>
+        </section>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/Python.png" alt="python" class="software-icon">
-          <div class="item-info">
-            <h3>Python 3.13.2</h3>
-            <p>文件大小：27MB | 平台：Windows</p>
-          </div>
-          <a href="https://www.python.org/ftp/python/3.13.2/python-3.13.2-amd64.exe" download class="download-btn" target="_blank">下载</a>
-        </div>
+        <!-- 软件（双列布局） -->
+        <section class="category" id="software">
+            <h2 style="color: white;">常用软件</h2>
+            <div class="downloads">
+                <div class="download-item">
+                    <img src="img/vscode.png" alt="VSCode" class="software-icon">
+                    <div class="item-info">
+                        <h3>VSCode 1.80</h3>
+                        <p>文件大小：160MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://code.visualstudio.com/sha/download?build=stable&os=win32-x64" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/7z.png" alt="7z" class="software-icon">
-          <div class="item-info">
-            <h3>7z 解压</h3>
-            <p> 文件大小：1.6MB | 平台：Windows</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIZ9Hr_JWVAYtFli3qO4xemA1?pwd=rr4s#" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/steam.png" alt="steam" class="software-icon">
+                    <div class="item-info">
+                        <h3>Steam</h3>
+                        <p>文件大小：2.4MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://www.openufs.com/SteamSetup.exe" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/ventoy.png" alt="ventoy" class="software-icon">
-          <div class="item-info">
-            <h3>Ventoy</h3>
-            <p>文件大小：160MB | 平台：Windows</p>
-          </div>
-          <a href="https://www.lanzoui.com/iAu7u2lnlimd" download class="download-btn">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/Python.png" alt="python" class="software-icon">
+                    <div class="item-info">
+                        <h3>Python 3.13.2</h3>
+                        <p>文件大小：27MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://www.python.org/ftp/python/3.13.2/python-3.13.2-amd64.exe" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/pychuarm.png" alt="pycharm" class="software-icon">
-          <div class="item-info">
-            <h3>Pycharm</h3>
-            <p>文件大小：835MB | 平台：Windows</p>
-          </div>
-          <a href="https://download-cdn.jetbrains.com.cn/python/pycharm-professional-2024.3.2.exe" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/7z.png" alt="7z" class="software-icon">
+                    <div class="item-info">
+                        <h3>7z 解压</h3>
+                        <p>文件大小：1.6MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIZ9Hr_JWVAYtFli3qO4xemA1?pwd=rr4s#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
+                <div class="download-item">
+                    <img src="img/ventoy.png" alt="ventoy" class="software-icon">
+                    <div class="item-info">
+                        <h3>Ventoy</h3>
+                        <p>文件大小：160MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://www.lanzoui.com/iAu7u2lnlimd" download class="download-btn">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/geek.png" alt="ventoy" class="software-icon">
-          <div class="item-info">
-            <h3>GeeK 卸载工具</h3>
-            <p>文件大小：2.3MB | 平台：Windows</p>
-          </div>
-          <a href="https://55f18fcf.zy-852.pages.dev/geek.exe" download class="download-btn">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/pychuarm.png" alt="pycharm" class="software-icon">
+                    <div class="item-info">
+                        <h3>Pycharm</h3>
+                        <p>文件大小：835MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://download-cdn.jetbrains.com.cn/python/pycharm-professional-2024.3.2.exe" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/kms.png" alt="pycharm" class="software-icon">
-          <div class="item-info">
-            <h3>HEU-KMS 激活工具</h3>
-            <p>文件大小：4.2MB | 平台：Windows</p>
-          </div>
-          <a href="https://zy-852.pages.dev/heu-kms.exe" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/geek.png" alt="ventoy" class="software-icon">
+                    <div class="item-info">
+                        <h3>GeeK 卸载工具</h3>
+                        <p>文件大小：2.3MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://55f18fcf.zy-852.pages.dev/geek.exe" download class="download-btn">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/filezilla.png" alt="filezilla" class="software-icon">
-          <div class="item-info">
-            <h3>FileZilla 客户端</h3>
-            <p>文件大小：12.3MB | 平台：Windows</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOI_HpIYTJQkHicOl3JWzwdMA1?pwd=64e6#" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/kms.png" alt="pycharm" class="software-icon">
+                    <div class="item-info">
+                        <h3>HEU-KMS 激活工具</h3>
+                        <p>文件大小：4.2MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://zy-852.pages.dev/heu-kms.exe" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/filezilla.png" alt="filezilla" class="software-icon">
-          <div class="item-info">
-            <h3>FileZilla 服务端</h3>
-            <p> 文件大小：6.1MB | 平台：Windows</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOIuXHkjb5b4bjcJQCfM4FvhA1?pwd=tf2q#" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/filezilla.png" alt="filezilla" class="software-icon">
+                    <div class="item-info">
+                        <h3>FileZilla 客户端</h3>
+                        <p>文件大小：12.3MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOI_HpIYTJQkHicOl3JWzwdMA1?pwd=64e6#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/mobaxterm.png" alt="Mobaxterm" class="software-icon">
-          <div class="item-info">
-            <h3>Mobaxterm</h3>
-            <p>文件大小：48.6MB | 平台：Windows | 汉化版</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOI_Fon9TJQkHicOl3JWz0NRA1?pwd=p2hs#" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/filezilla.png" alt="filezilla" class="software-icon">
+                    <div class="item-info">
+                        <h3>FileZilla 服务端</h3>
+                        <p>文件大小：6.1MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOIuXHkjb5b4bjcJQCfM4FvhA1?pwd=tf2q#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/VMware.png" alt="VMware" class="software-icon">
-          <div class="item-info">
-            <h3>VMware</h3>
-            <p> 文件大小：618MB | 平台：Windows</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VOI_AzXk1PpZLxOiIpv_lD28A1?pwd=zex6#" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/mobaxterm.png" alt="Mobaxterm" class="software-icon">
+                    <div class="item-info">
+                        <h3>Mobaxterm</h3>
+                        <p>文件大小：48.6MB | 平台：Windows | 汉化版</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOI_Fon9TJQkHicOl3JWz0NRA1?pwd=p2hs#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/ps.png" alt="ps" class="software-icon">
-          <div class="item-info">
-            <h3>Photoshop 2025</h3>
-            <p>文件大小：4.8GB | 平台：Windows</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VO9PrV4oA2hSFekavrRdaH1MA1?pwd=grg7" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/VMware.png" alt="VMware" class="software-icon">
+                    <div class="item-info">
+                        <h3>VMware</h3>
+                        <p>文件大小：618MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VOI_AzXk1PpZLxOiIpv_lD28A1?pwd=zex6#" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/prr.png" alt="Premiere" class="software-icon">
-          <div class="item-info">
-            <h3>Premiere 2024</h3>
-            <p> 文件大小：2.1GB | 平台：Windows</p>
-          </div>
-          <a href="https://pan.xunlei.com/s/VO9Q-KqHteDq8jY1SYLdjHhBA1?pwd=gcny" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/ps.png" alt="ps" class="software-icon">
+                    <div class="item-info">
+                        <h3>Photoshop 2025</h3>
+                        <p>文件大小：4.8GB | 平台：Windows</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VO9PrV4oA2hSFekavrRdaH1MA1?pwd=grg7" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-       <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/watt.png" alt="ps" class="software-icon">
-          <div class="item-info">
-            <h3>Watt Toolki</h3>
-            <p>文件大小：89MB | 平台：Windows</p>
-          </div>
-          <a href="https://www.ilanzou.com/s/ije0VgFN" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/prr.png" alt="Premiere" class="software-icon">
+                    <div class="item-info">
+                        <h3>Premiere 2024</h3>
+                        <p>文件大小：2.1GB | 平台：Windows</p>
+                    </div>
+                    <a href="https://pan.xunlei.com/s/VO9Q-KqHteDq8jY1SYLdjHhBA1?pwd=gcny" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="https://www.hibitsoft.ir/images/Uninstaller-icon.png" alt="Premiere" class="software-icon">
-          <div class="item-info">
-            <h3>HiBit</h3>
-            <p> 文件大小：4MB | 平台：Windows</p>
-          </div>
-          <a href="https://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-3.2.50.exe" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
+                <div class="download-item">
+                    <img src="img/watt.png" alt="ps" class="software-icon">
+                    <div class="item-info">
+                        <h3>Watt Toolki</h3>
+                        <p>文件大小：89MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://www.ilanzou.com/s/ije0VgFN" download class="download-btn" target="_blank">下载</a>
+                </div>
 
+                <div class="download-item">
+                    <img src="https://www.hibitsoft.ir/images/Uninstaller-icon.png" alt="Premiere" class="software-icon">
+                    <div class="item-info">
+                        <h3>HiBit</h3>
+                        <p>文件大小：4MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-setup-3.2.50.exe" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-      <div class="gd"></div>
-      <div class="downloads">
-        <div class="download-item">
-          <img src="img/xshell.png" alt="xshell" class="software-icon">
-          <div class="item-info">
-            <h3>xshell</h3>
-            <p>文件大小：45MB | 平台：Windows</p>
-          </div>
-          <a href="https://cdn.netsarang.net/274efd03/Xshell-8.0.0067p.exe" download class="download-btn" target="_blank">下载</a>
-        </div>
+                <div class="download-item">
+                    <img src="img/xshell.png" alt="xshell" class="software-icon">
+                    <div class="item-info">
+                        <h3>xshell</h3>
+                        <p>文件大小：45MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://cdn.netsarang.net/274efd03/Xshell-8.0.0067p.exe" download class="download-btn" target="_blank">下载</a>
+                </div>
 
-        <div class="download-item">
-          <img src="img/xftp.png" alt="xftp" class="software-icon">
-          <div class="item-info">
-            <h3>xftp</h3>
-            <p> 文件大小：36MB | 平台：Windows</p>
-          </div>
-          <a href="https://cdn.netsarang.net/274efd03/Xftp-8.0.0067p.exe" download class="download-btn" target="_blank">下载</a>
-        </div>
-      </div>
-    </section>
-  </main>
+                <div class="download-item">
+                    <img src="img/xftp.png" alt="xftp" class="software-icon">
+                    <div class="item-info">
+                        <h3>xftp</h3>
+                        <p>文件大小：36MB | 平台：Windows</p>
+                    </div>
+                    <a href="https://cdn.netsarang.net/274efd03/Xftp-8.0.0067p.exe" download class="download-btn" target="_blank">下载</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer class="footer">
-    <p>© 2025 Riley下载站 | 联系:Riley@ctfclub.org | ICP备案号：要个蛋的备案 |<a href="yl.html" style="color:#007acc;">友链</a></p>
-  </footer>
-<script src="script.js"></script>
+    <!-- 脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.trim().toLowerCase();
+                const items = document.querySelectorAll('.download-item');
+                const sections = document.querySelectorAll('.category');
+
+                // 隐藏所有项
+                items.forEach(item => item.style.display = 'none');
+                sections.forEach(section => section.style.display = 'none');
+
+                if (searchTerm) {
+                    items.forEach(item => {
+                        const title = item.querySelector('h3').textContent.toLowerCase();
+                        const desc = item.querySelector('p').textContent.toLowerCase();
+                        if (title.includes(searchTerm) || desc.includes(searchTerm)) {
+                            item.style.display = 'flex';
+                            item.closest('.category').style.display = 'block';
+                        }
+                    });
+                } else {
+                    // 显示全部
+                    items.forEach(item => item.style.display = 'flex');
+                    sections.forEach(section => section.style.display = 'block');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
