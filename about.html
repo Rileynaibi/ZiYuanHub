@@ -3,42 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="关于我们">
+    <title>关于我们</title>
+    <meta name="description" content="ZiYuanHub资源酷的团队介绍，一群热爱技术的小伙伴，一起打造最有趣的下载平台！">
     <meta name="keywords" content="关于我们">
-    <title>ZiYuanHub - 资源酷 官网</title>
-    
     <!-- SEO优化 -->
     <meta property="og:title" content="关于我们">
-    <meta property="og:description" content="关于我们">
+    <meta property="og:description" content="ZiYuanHub资源酷是由一群热爱技术的小伙伴组成的团队，我们的目标是打造一个有趣又实用的下载平台！">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.itxueba.com">
-    <link rel="canonical" href="https://www.itxueba.com">
-    <meta property="og:url" content="https://www.openufs.com">
-    <link rel="canonical" href="https://www.openufs.com">
+    <meta property="og:url" content="https://www.itxueba.com/about.html">
+    <link rel="canonical" href="https://www.itxueba.com/about.html">
     <link rel="shortcut icon" href="/favicon.png">
-    <link rel="shortcut icon" href="/favicon.png">
-    <link rel="shortcut icon" href="https://www.openufs.com/favicon.png">
-    <link rel="shortcut icon" href="https://www.openufs.com/favicon.png">
-    <link rel="shortcut icon" href="https://www.ti.cyou/favicon.png">
-    <link rel="shortcut icon" href="https://www.itxueba.com/favicon.png">
-    
     <!-- 样式表 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://ox.cyou/stylez.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- 原有内联样式 -->
     <style>
         body { background-color: #1e1e1e; color: #d4d4d4; }
         .navbar { background-color: #333; }
         .card { background-color: #333; border: 1px solid #444; border-radius: 8px; }
         .btn-primary { background-color: #0078d7; border-color: #0078d7; }
         .btn-primary:hover { background-color: #00579f; border-color: #00579f; }
-        .search-input { background-color: #444; border: 1px solid #555; color: #fff; border-radius: 4px; }
-        .navbar-logo {
-            height: 30px;  /* 控制logo高度 */
-            margin-right: 10px;  /* logo与文字的间距 */
-            vertical-align: middle;  /* 垂直对齐 */
+        .navbar-logo { height: 30px; margin-right: 10px; vertical-align: middle; }
+        .about-section { margin: 40px 0; }
+        .about-section h2 { color: #00b3ee; margin-bottom: 20px; }
+        .about-section p { margin-bottom: 15px; line-height: 1.7; }
+        .team-member { text-align: center; margin-bottom: 30px; }
+        .team-img { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            margin: 0 auto 15px; 
+            background-color: #444;
+            transition: transform 0.3s ease;
+            border: 2px solid #00b3ee;
+            box-shadow: 0 0 10px rgba(0, 179, 238, 0.5);
+        }
+        .team-member h4 { color: white; margin-bottom: 5px; }
+        .team-member p { color: #aaa; font-size: 0.9rem; }
+        .why-us-item { margin-bottom: 15px; }
+        .why-us-item i { 
+            color: #00b3ee; 
+            margin-right: 8px;
+            font-size: 1.2rem;
+            vertical-align: middle;
+        }
+        .recent-update-item { margin-bottom: 15px; }
+        .recent-update-item strong { display: block; margin-bottom: 5px; color: white; }
+        .recent-update-item p { color: #aaa; font-size: 0.9rem; margin: 0; }
+        .qr-code-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .qr-code { 
+            width: 150px; 
+            height: 150px; 
+            transition: transform 0.3s ease;
+        }
+        .qr-code:hover { transform: scale(1.05); }
+        img {
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            .qr-code-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .qr-code {
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
@@ -46,60 +80,133 @@
     <!-- 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          
             <a class="navbar-brand" href="/"><img src="img/logo.png" alt="网站Logo" class="navbar-logo">ZiYuanHub - 资源酷</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="/">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">首页</a></li>
                     <li class="nav-item"><a class="nav-link" href="#software">软件</a></li>
                     <li class="nav-item"><a class="nav-link" href="#windows">Windows</a></li>
                     <li class="nav-item"><a class="nav-link" href="#linux">Linux</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://ti.cyou/about.html">关于我们</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://www.openufs.com/">已访问：<span id="visitorCount">9999+</span> 次</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="https://git.waf.alt">GitHub加速</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=P2NYV5gkLeI2Ni1VnbvMWMc__r-D_8Lv&authKey=8z1O3xnT216O0gfLih2FQjffRH%2FDPHsafeky%2FJ%2Fh%2FaGg1kX%2B4ouxLTQJ74YiU0fA&noverify=0&group_code=727496785">官方群聊</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="https://ti.cyou/about.html">关于我们</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 间距元素 -->
-    <div class="tb"></div>
-    <div class="tb"></div>
+    <!-- 主要内容 -->
+    <main class="container my-4">
+        <section class="about-section">
+            <h1 style="color: white; text-align: center; margin-bottom: 30px;">关于ZiYuanHub资源酷</h1>
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2>我们的使命</h2>
+                    <p>我们是一个小小的下载站，目标是让大家能轻松下载到各种系统和软件（虽然听起来有点普通，但我们很认真！）。我们希望用户能省心省力地获取需要的资源，不用在复杂的网站中迷失方向，就像在迷宫中找到出口一样！ 🚀</p>
+                    
+                    <h2>站长介绍</h2>
+                    <p class="text-white">站长是Riley-莱利，一个热爱技术的程序猿，平时喜欢捣鼓各种系统和软件。他总想着怎么让网站更好用，给大家带来更好的下载体验！ 😄</p>
+                    
+                    <h2>我们的团队</h2>
+                    <p class="text-white">我们就是一群热爱技术的小伙伴，平时喜欢捣鼓各种系统和软件。虽然我们来自不同的背景，但我们有一个共同的目标：让大家的下载体验更愉快！ 🎉</p>
+                    
+                    <div class="row team-members">
+                        <div class="col-md-4 team-member">
+                            <img src="http://q1.qlogo.cn/g?b=qq&nk=3154930252&s=100" alt="张明" class="team-img">
+                            <h4>Riley-莱利 - 站长</h4>
+                            <p>爱折腾的程序猿，偶尔会冒出一些奇奇怪怪的想法，总是想让网站更好用！ 🧑‍💻</p>
+                        </div>
+                        <div class="col-md-4 team-member">
+                            <img src="http://q1.qlogo.cn/g?b=qq&nk=1705046901&s=100" alt="李华" class="team-img">
+                            <h4>小莲</h4>
+                            <p>一个技术牛子，整天搞些王安相关内容 💻</p>
+                        </div>
+                        <div class="col-md-4 team-member">
+                            <img src="http://q1.qlogo.cn/g?b=qq&nk=3154930252&s=100" alt="王芳" class="team-img">
+                            <h4>就那谁啊</h4>
+                            <p>资源的守护者，确保每个下载链接都能正常工作，不让大家失望！ 📄</p>
+                        </div>
+                    </div>
+                    
+                    <h2>我们的价值观</h2>
+                    <p>简单来说，我们就是想让大家用得开心！我们的资源都是经过精心挑选的，就像挑选最甜的水果一样！ 🍎</p>
+                    
+                    <h2>联系我们</h2>
+                    <p>有问题或想聊聊？随时欢迎联系我们！</p>
+                    <p><i class="bi bi-envelope"></i> 邮箱：Riley@CTFclub.org</p>
+                    <p><i class="bi bi-github"></i> B站：Riley哥哥</p>
+                    
+                    <h3>关注我们</h3>
+                    <p>扫描下方二维码，关注我们的公众号或加入官方群聊，获取最新资讯和资源！</p>
+                    <div class="qr-code-container">
+                        <a href="your-wechat-public-account-link">
+                            <img src="img/abot/gzh.png" alt="公众号二维码" class="qr-code">
+                        </a>
+                        <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=P2NYV5gkLeI2Ni1VnbvMWMc__r-D_8Lv&authKey=8z1O3xnT216O0gfLih2FQjffRH%2FDPHsafeky%2FJ%2Fh%2FaGg1kX%2B4ouxLTQJ74YiU0fA&noverify=0&group_code=727496785">
+                            <img src="img/abot/qq.png" alt="官方群聊二维码" class="qr-code">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title" style="color: #ffffff;">为什么选择ZiYuanHub?</h3>
+                            <div class="why-us-item">
+                                <i class="bi bi-check-circle" style="color: #ffffff;">无广告，纯净下载体验</i> 
+                            </div>
+                            <div class="why-us-item">
+                                <i class="bi bi-check-circle" style="color: #ffffff;">资源丰富多样</i> 
+                            </div>
+                            <div class="why-us-item">
+                                <i class="bi bi-check-circle" style="color: #ffffff;">下载速度快如闪电</i> 
+                            </div>
+                            <div class="why-us-item">
+                                <i class="bi bi-check-circle" style="color: #ffffff;">界面简洁直观</i> 
+                            </div>
+                            <div class="why-us-item">
+                                <i class="bi bi-check-circle" style="color: #ffffff;">超友好的社区支持</i> 
+                            </div>
+                            <div class="mt-3">
+                                <a href="/" class="btn btn-primary w-100">立即体验</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <h3 class="card-title">近期更新</h3>
+                            <div class="recent-update-item">
+                                <strong>Windows 11 24H2</strong>
+                                <p>新增支持Intel第14代处理器优化</p>
+                            </div>
+                            <div class="recent-update-item">
+                                <strong>Ubuntu 24.04 LTS</strong>
+                                <p>更新至最新安全补丁</p>
+                            </div>
+                            <div class="recent-update-item">
+                                <strong>VSCode 1.93</strong>
+                                <p>集成AI代码助手功能</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    
+    <!-- 页脚 -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center text-white">
+            <p>© 2025 ZiYuanHub资源酷 - 提供纯净安全的系统镜像与软件下载</p>
+            
+        </div>
+    </footer>
 
+    <!-- 脚本 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const searchInput = document.getElementById('search-input');
-            searchInput.addEventListener('input', function() {
-                const searchTerm = this.value.trim().toLowerCase();
-                const items = document.querySelectorAll('.download-item');
-                const sections = document.querySelectorAll('.category');
-
-                // 隐藏所有项
-                items.forEach(item => item.style.display = 'none');
-                sections.forEach(section => section.style.display = 'none');
-
-                if (searchTerm) {
-                    items.forEach(item => {
-                        const title = item.querySelector('h3').textContent.toLowerCase();
-                        const desc = item.querySelector('p').textContent.toLowerCase();
-                        if (title.includes(searchTerm) || desc.includes(searchTerm)) {
-                            item.style.display = 'flex';
-                            item.closest('.category').style.display = 'block';
-                        }
-                    });
-                } else {
-                    // 显示全部
-                    items.forEach(item => item.style.display = 'flex');
-                    sections.forEach(section => section.style.display = 'block');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
