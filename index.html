@@ -711,29 +711,52 @@ var _hmt = _hmt || [];
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const searchInput = document.getElementById('search-input');
+            let originalDisplayStates = new Map();
+            
+            // 保存原始显示状态
+            document.querySelectorAll('.category, .download-item').forEach(element => {
+                originalDisplayStates.set(element, element.style.display);
+            });
+
             searchInput.addEventListener('input', function() {
                 const searchTerm = this.value.trim().toLowerCase();
                 const items = document.querySelectorAll('.download-item');
-                const sections = document.querySelectorAll('.category');
+                const categories = document.querySelectorAll('.category');
+                const categoryTitles = document.querySelectorAll('.category h2');
 
-                // 隐藏所有项
-                items.forEach(item => item.style.display = 'none');
-                sections.forEach(section => section.style.display = 'none');
-
-                if (searchTerm) {
-                    items.forEach(item => {
-                        const title = item.querySelector('h3').textContent.toLowerCase();
-                        const desc = item.querySelector('p').textContent.toLowerCase();
-                        if (title.includes(searchTerm) || desc.includes(searchTerm)) {
-                            item.style.display = 'flex';
-                            item.closest('.category').style.display = 'block';
-                        }
+                if (searchTerm === '') {
+                    // 恢复原始显示状态
+                    categories.forEach(category => {
+                        category.style.display = originalDisplayStates.get(category) || 'block';
                     });
-                } else {
-                    // 显示全部
-                    items.forEach(item => item.style.display = 'flex');
-                    sections.forEach(section => section.style.display = 'block');
+                    items.forEach(item => {
+                        item.style.display = originalDisplayStates.get(item) || 'flex';
+                    });
+                    categoryTitles.forEach(title => title.style.display = 'block');
+                    return;
                 }
+
+                // 隐藏所有分类标题
+                categoryTitles.forEach(title => title.style.display = 'none');
+                
+                let hasMatches = false;
+                items.forEach(item => {
+                    const textContent = item.textContent.toLowerCase();
+                    if (textContent.includes(searchTerm)) {
+                        item.style.display = 'flex';
+                        item.closest('.category').style.display = 'block';
+                        item.closest('.downloads').style.maxWidth = '100%';
+                        hasMatches = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                // 隐藏无匹配的分类
+                categories.forEach(category => {
+                    const visibleItems = category.querySelectorAll('.download-item[style*="display: flex"]');
+                    category.style.display = visibleItems.length > 0 ? 'block' : 'none';
+                });
             });
         });
     </script>
