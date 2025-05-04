@@ -185,7 +185,7 @@ toggletheme() 切换主题
     </div>
 	<div id="loginback">
 		<div class="user"></div>
-		<div class="name">Administrator</div>
+		<div class="name">Administrator-ZiYuanHub</div>
 		
 		<div id="login" onclick="$(this).css('opacity','0');$('#login-welc').css('opacity','1');
 			setTimeout(() => {
@@ -215,6 +215,7 @@ toggletheme() 切换主题
 		</div>
 		<list class="langselect new">
 			<span class="text" style="font-size: 22px;"><i class="bi bi-globe2"></i></span>
+			<a class="a zh-CN" onclick="localStorage.setItem('lang','zh-CN');window.location.href='';">ZiYuanHub</a>
 			<a class="a def" onclick="
 				if(navigator.language in langc)
 					localStorage.setItem('lang',langc[navigator.language]);
@@ -224,6 +225,7 @@ toggletheme() 切换主题
 			<a class="a zh-CN" onclick="localStorage.setItem('lang','zh-CN');window.location.href='';">简体中文</a>
 			<a class="a zh-TW" onclick="localStorage.setItem('lang','zh-TW');window.location.href='';">繁體中文</a>
 			<a class="a en" onclick="localStorage.setItem('lang','en');window.location.href='';">English</a>
+			
 		</list>
 		<a class="power" onclick="$(this).addClass('show')">
 			<!-- <i class="bi bi-translate" onclick="
@@ -334,6 +336,10 @@ toggletheme() 切换主题
 					<p data-i18n="defender.name">Windows 安全中心</p>
 				</a>
 				<p class="text" data-i18n="stmenu-webapp">Web 应用</p>
+				<a oncontextmenu="return showcm(event, 'smlapp', ['bilibili', '哔哩哔哩'])" onclick="openapp('bilibili');hide_startmenu();">
+					<img src="https://openufs.com/img/logo.png">
+					<p data-i18n="bilibili.name">ZiYuanHub</p>
+				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['bilibili', '哔哩哔哩'])" onclick="openapp('bilibili');hide_startmenu();">
 					<img src="icon/bilibili.png">
 					<p data-i18n="bilibili.name">哔哩哔哩</p>
