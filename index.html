@@ -77,9 +77,10 @@ var _hmt = _hmt || [];
         .marquee-text {
             white-space: nowrap;
             animation: marquee 15s linear infinite;
+            animation-play-state: running; /* 新增动画状态控制 */
             font-size: 1.2em;
-            color: #fff; /* 改为白色文字 */
-            padding: 5px 0; /* 减少上下间距 */
+            color: #fff;
+            padding: 5px 0;
         }
         @keyframes marquee {
             0% { transform: translateX(100%); }
@@ -917,6 +918,27 @@ var _hmt = _hmt || [];
                     category.style.display = visibleItems.length > 0 ? 'block' : 'none';
                 });
             });
+        });
+    </script>
+
+    <script>
+        // 新增滚动控制逻辑
+        const marquee = document.querySelector('.marquee-text');
+        
+        // 桌面端鼠标悬停控制
+        marquee.addEventListener('mouseover', () => {
+            marquee.style.animationPlayState = 'paused';
+        });
+        marquee.addEventListener('mouseout', () => {
+            marquee.style.animationPlayState = 'running';
+        });
+
+        // 移动端触摸控制
+        marquee.addEventListener('touchstart', () => {
+            marquee.style.animationPlayState = 'paused';
+        });
+        marquee.addEventListener('touchend', () => {
+            marquee.style.animationPlayState = 'running';
         });
     </script>
 </body>
