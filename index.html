@@ -63,6 +63,30 @@ var _hmt = _hmt || [];
         }
     </style>
 
+    <style>
+        /* 原有样式... */
+        
+        /* 修改后的滚动样式 */
+        .ad-container {
+            overflow: hidden;
+            position: relative;
+            height: 40px; /* 减少容器高度 */
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        .marquee-text {
+            white-space: nowrap;
+            animation: marquee 15s linear infinite;
+            font-size: 1.2em;
+            color: #fff; /* 改为白色文字 */
+            padding: 5px 0; /* 减少上下间距 */
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+
     <script>
 var _hmt = _hmt || [];
 (function() {
@@ -141,9 +165,25 @@ var _hmt = _hmt || [];
             </div>
         </section>
 
-    <!-- 全部内容 -->
-    <main class="container">
-        <!-- Windows系统（单列布局） -->
+
+
+
+
+
+        
+    <!-- 新增广告区 -->
+    <section class="category" id="ad-section">
+        <div class="downloads">
+            <div class="download-item ad-container">
+                <div class="item-info">
+                    <div class="marquee-text">
+                        朱波生活费缩水了，没钱维护了，想在这里接个小广告，求赞助，谢谢！| 联系：QQ：3154930252 邮箱：3154930252@qq.com 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 全部内容 -->
         <section class="category" id="windows">
             <h2 style="color: white;">近期热门下载-软件</h2>
             <div class="downloads">
