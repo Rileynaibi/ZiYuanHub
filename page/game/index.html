@@ -3,22 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ZiYuanHub官方网站——提供纯净安全的Windows系统镜像、Linux发行版及常用软件下载，下载快捷无需繁琐步骤，专门服务于电脑小白，全站无广告、绿色安全。">
-    <meta name="keywords" content="Windows系统下载,Linux镜像,软件下载,纯净系统,VSCode下载,Steam客户端,Python安装包">
-    <meta http-equiv="refresh" content="1800">
-    <title>资源酷 - ZiYuanHub</title>
+    <meta name="description" content="ZiYuanHub游戏下载 - 提供各类游戏，好玩游戏推荐及最新技术评测">
+    <meta name="keywords" content="各类游戏，好玩游戏推荐，下载简单">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="refresh" content="180">  <!-- 新增自动刷新 -->
+    <title>游戏下载</title>
     
     <!-- SEO优化 -->
     <meta property="og:title" content="ZiYuanHub - 安全纯净的系统镜像与软件下载站">
     <meta property="og:description" content="提供最新Windows、Linux系统镜像和开发工具下载">
     <meta property="og:type" content="website">
     <link rel="shortcut icon" href="/fav/favicon.png">
+
     
     <!-- 样式表 -->
     <link href="/css/min.css" rel="stylesheet">
     <link href="https://ox.cyou/stylez.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
 
+<!-- 
+
+$$$$$$$$\ $$\ $$\     $$\                               $$\   $$\           $$\       
+\____$$  |\__|\$$\   $$  |                              $$ |  $$ |          $$ |      
+    $$  / $$\  \$$\ $$  / $$\   $$\  $$$$$$\  $$$$$$$\  $$ |  $$ |$$\   $$\ $$$$$$$\  
+   $$  /  $$ |  \$$$$  /  $$ |  $$ | \____$$\ $$  __$$\ $$$$$$$$ |$$ |  $$ |$$  __$$\ 
+  $$  /   $$ |   \$$  /   $$ |  $$ | $$$$$$$ |$$ |  $$ |$$  __$$ |$$ |  $$ |$$ |  $$ |
+ $$  /    $$ |    $$ |    $$ |  $$ |$$  __$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |
+$$$$$$$$\ $$ |    $$ |    \$$$$$$  |\$$$$$$$ |$$ |  $$ |$$ |  $$ |\$$$$$$  |$$$$$$$  |
+\________|\__|    \__|     \______/  \_______|\__|  \__|\__|  \__| \______/ \_______/ 
+                                                                                      
+                                                                                      
+制作不易希望二次开发者保留此注释，作者开发能力不是很好，希望大佬不吝赐教，谢谢！
+作者：Riley-莱利    邮箱：admin@ctfclub.org,  QQ：3154930252， 抖音：Riley
+-->
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b9636a69a261a5b289de7769807b9589";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+    <!-- 原有内联样式 -->
     <style>
         body { background-color: #1e1e1e; color: #d4d4d4; }
         .navbar { background-color: #333; }
@@ -27,327 +59,162 @@
         .btn-primary:hover { background-color: #00579f; border-color: #00579f; }
         .search-input { background-color: #444; border: 1px solid #555; color: #fff; border-radius: 4px; }
         .navbar-logo {
-            height: 30px;  
-            margin-right: 10px;  
-            vertical-align: middle;  
-        }
-        .game-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            padding: 20px 0;
-        }
-        .game-item {
-            background: #2a2a2a;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            gap: 20px;
-            transition: transform 0.3s ease;
-            border: 1px solid #444;
-        }
-        .game-item:hover {
-            transform: translateY(-5px);
-        }
-        .game-item img {
-            width: 170px;
-            height: 170px;
-            object-fit: cover;
-            border-radius: 5px;
-        }
-        .game-info {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .game-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 5px;
-            color: #ffffff;
-        }
-        .game-meta {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-        .meta-item {
-            display: flex;
-        }
-        .meta-label {
-            color: #999;
-            font-weight: bold;
-        }
-        .meta-value {
-            color: #fff;
-        }
-        .game-tags {
-            margin: 10px 0;
-        }
-        .tag-label {
-            font-weight: bold;
-            color: #999;
-        }
-        .tag-items {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        .tag {
-            background-color: #444;
-            color: #fff;
-            padding: 3px 8px;
-            border-radius: 3px;
-            font-size: 12px;
-        }
-        .download-btn {
-            background: linear-gradient(135deg, #ff7e00 0%, #ff9f00 100%);
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 16px;
-            margin-top: 10px;
-            transition: background-color 0.3s;
-            width: 100%;
-            display: inline-block;
-        }
-        .download-btn:hover {
-            background: linear-gradient(135deg, #e67800 0%, #e69000 100%);
-        }
-        .main-content {
-            background-color: #222;
-            border-radius: 10px;
-            padding: 30px;
-            margin-top: 20px;
-        }
-        .section-title {
-            color: #ffffff;
-            font-size: 24px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #444;
-            padding-bottom: 10px;
+            height: 30px;  /* 控制logo高度 */
+            margin-right: 10px;  /* logo与文字的间距 */
+            vertical-align: middle;  /* 垂直对齐 */
         }
     </style>
+
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?128e2ce1c8bcafe73a731f393465201a";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?b8c12b37c3dcdff2afc09bc4be815c02";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="/">
-                <img src="img/logo.png" alt="网站Logo" class="navbar-logo">
-                <span>ZiYuanHub - 资源酷</span>
-            </a>
+          
+            <a class="navbar-brand" href="/"><img src="/img/logo.png" alt="网站Logo" class="navbar-logo">ZiYuanHub - 资源酷</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="/">首页</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#software">软件</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#windows">Windows</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#linux">Linux</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#software">软件</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#windows">Windows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/#linux">Linux</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://email.openufs.com">免费邮箱</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://g.oku.lol">GitHub加速</a></li>
                     <li class="nav-item"><a class="nav-link" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=P2NYV5gkLeI2Ni1VnbvMWMc__r-D_8Lv&authKey=8z1O3xnT216O0gfLih2FQjffRH%2FDPHsafeky%2FJ%2Fh%2FaGg1kX%2B4ouxLTQJ74YiU0fA&noverify=0&group_code=727496785">官方群聊</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://s.threatbook.com/report/url/91723a6ee58f55a4278a76c2b4253606">站点安全报告</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/page/blog/">技术博客</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://s.threatbook.com/report/url/91723a6ee58f55a4878a76c2b4253606">站点安全报告</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/page/blog/blog.html">技术博客</a></li>
                     <li class="nav-item"><a class="nav-link" href="/page/about.html">关于我们</a></li>
+                
+                    
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- 搜索栏 -->
+    <!-- 间距元素 -->
+    <div class="tb"></div>
+    <div class="tb"></div>
+
+    <!-- 搜索框 -->
     <main class="container my-4">
-        <h2 style="color: white; text-align: center;">常用游戏</h2>
-        <p style="color: white; text-align: center;">为了防止资源恶意使用，如您下载的资源有密码请关注公众号【Riley的杰作】发送"密码"来获取密码</p>
+        <h2 style="color: white; text-align: center;">各种游戏，好玩游戏推荐</h2>
         <div class="row justify-content-center">
             <div class="col-md-6">
                 <div class="input-group mb-4">
-                    <input type="text" id="search-input" class="form-control search-input" placeholder="搜索游戏或其他资源">
+                    <input type="text" id="search-input" class="form-control search-input" placeholder="搜索软件或系统镜像">
                 </div>
             </div>
         </div>
     </main>
-
-    <!-- 游戏部分 -->
-    <main class="container main-content">
-        <section class="category" id="game">
-            <h2 class="section-title">游戏下载</h2>
-            <div class="game-container">
-                <div class="game-item">
-                    <img src="1.jpg" alt="蜂巢疫灾">
-                    <div class="game-info">
-                        <h3 class="game-title">《蜂巢疫灾》电脑版</h3>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">类型：</span>
-                                <span class="meta-value">策略游戏</span>
-                            </span>
-                            <span class="meta-item">
-                                <span class="meta-label">平台：</span>
-                                <span class="meta-value">pc</span>
-                            </span>
+    
+        <!-- 站点声明！ -->
+        <main class="container">
+            <section class="category" id="windows">
+                <div class="downloads">
+                    <div class="download-item">
+                        <div class="item-info">
+                            <h3>本网站郑重声明：本站严格遵守《网络安全法》《互联网信息服务管理办法》《网络与信息安全公约》《网络数据安全管理条例》《网络暴力信息治理规定》等法律法规，坚决抵制网络暴力，积极维护清朗网络空间。本网站为个人开发的公益下载站，不存在收费行为，软件和其他资源仅适用于学习交流，使用软件或其他资源时请遵守您所在地区的相关法律法规，如您使用本站任何资源进行违法违规事件与本站站长无关，如您有任何问题可联系站长！</h3>
                         </div>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">语言：</span>
-                                <span class="meta-value">简中</span>
-                            </span>
-                            <span class="meta-item">
-                                <span class="meta-label">评分：</span>
-                                <span class="meta-value">7.8</span>
-                            </span>
-                        </div>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">发布：</span>
-                                <span class="meta-value">2025-05-18</span>
-                            </span>
-                        </div>
-                        <div class="game-tags">
-                            <span class="tag-label">标签：</span>
-                            <div class="tag-items">
-                                <span class="tag">自走棋</span>
-                                <span class="tag">牌组构建</span>
-                                <span class="tag">卡牌肉鸽</span>
-                            </div>
-                        </div>
-                        <a href="#" class="download-btn">游戏下载 (219.60MB)</a>
                     </div>
                 </div>
-                <div class="game-item">
-                    <img src="2.jpg" alt="桌面小恐龙">
-                    <div class="game-info">
-                        <h3 class="game-title">《桌面小恐龙》免安装中文版</h3>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">类型：</span>
-                                <span class="meta-value">休闲益智</span>
-                            </span>
-                            <span class="meta-item">
-                                <span class="meta-label">平台：</span>
-                                <span class="meta-value">pc</span>
-                            </span>
-                        </div>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">语言：</span>
-                                <span class="meta-value">简中</span>
-                            </span>
-                            <span class="meta-item">
-                                <span class="meta-label">评分：</span>
-                                <span class="meta-value">8.0</span>
-                            </span>
-                        </div>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">发布：</span>
-                                <span class="meta-value">2025-05-18</span>
-                            </span>
-                        </div>
-                        <div class="game-tags">
-                            <span class="tag-label">标签：</span>
-                            <div class="tag-items">
-                                <span class="tag">挂机游戏</span>
-                                <span class="tag">可爱</span>
+            </section>
+    
+        <!-- 请作者喝茶！ -->
+        <section class="category" id="support">
+            <div class="downloads">
+                <div class="download-item">
+                    <div class="item-info" style="display: flex; align-items: center;">
+                        <div style="flex: 1; margin-right: 25px;">
+                            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 10px;">
+                    
+                                <img src="http://q1.qlogo.cn/g?b=qq&nk=3154930252&s=100"
+                         
+                                     alt="开发者头像" 
+                                     style="width: 60px; height: 60px; border-radius: 50%; border: 2px solid #ffd700; box-shadow: 0 2px 8px rgba(0,0,0,0.3);">
+                                    <div>
+                                        <h3 style="color: #fff; margin: 0; font-size: 1.3em; letter-spacing: 0.5px;">
+                                            Riley-莱利
+                                        </h3>
+                                        <p style="color: #ccc; font-size: 0.95em; margin: 5px 0 0 0; line-height: 1.4;">
+                                            🎯 我在业余时间开发了这个网站，并利用业余时间进行维护！<br>
+                                            🔨 如你觉得不错可以扫描二维码请作者喝杯茶！<br>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p style="color: #ccc; font-size: 0.9em; line-height: 1.4; margin: 0;">
+                                    <span style="color: #fff;">赞助去向：</span>
+                                    服务器续费/域名维护/开发投入<br>
+                                    联系作者 | QQ：3154930252，邮箱：Riley@CTFclub.org | 3154930252@qq.com
+                                </p>
                             </div>
+                   
+                            <img src="/page/blog/zsm.jpg" alt="赞赏码" style="max-width: 120px; border-radius: 6px; border: 1px solid #555;">
+                    
                         </div>
-                        <a href="#" class="download-btn">游戏下载 (3.11GB)</a>
-                    </div>
-                </div>
-                <div class="game-item">
-                    <img src="3.jpg" alt="DOOM黑暗纪元">
-                    <div class="game-info">
-                        <h3 class="game-title">《DOOM黑暗纪元》官方版</h3>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">类型：</span>
-                                <span class="meta-value">射击游戏</span>
-                            </span>
-                            <span class="meta-item">
-                                <span class="meta-label">平台：</span>
-                                <span class="meta-value">pc</span>
-                            </span>
-                        </div>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">语言：</span>
-                                <span class="meta-value">简中</span>
-                            </span>
-                            <span class="meta-item">
-                                <span class="meta-label">评分：</span>
-                                <span class="meta-value">8.2</span>
-                            </span>
-                        </div>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">发布：</span>
-                                <span class="meta-value">2025-05-18</span>
-                            </span>
-                        </div>
-                        <div class="game-tags">
-                            <span class="tag-label">标签：</span>
-                            <div class="tag-items">
-                                <span class="tag">奇幻</span>
-                                <span class="tag">枪战</span>
-                                <span class="tag">暗黑</span>
-                                <span class="tag">多支线</span>
-                                <span class="tag">龙</span>
-                            </div>
-                        </div>
-                        <a href="#" class="download-btn">游戏下载 (69.27GB)</a>
-                    </div>
-                </div>
-                <div class="game-item">
-                    <img src="1.jpg" alt="后室循环">
-                    <div class="game-info">
-                        <h3 class="game-title">《后室循环》免安装中文版</h3>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">类型：</span>
-                                <span class="meta-value">冒险游戏</span>
-                            </span>
-                            <span class="meta-item">
-                                <span class="meta-label">平台：</span>
-                                <span class="meta-value">pc</span>
-                            </span>
-                        </div>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">语言：</span>
-                                <span class="meta-value">简中</span>
-                            </span>
-                            <span class="meta-item">
-                                <span class="meta-label">评分：</span>
-                                <span class="meta-value">8.0</span>
-                            </span>
-                        </div>
-                        <div class="game-meta">
-                            <span class="meta-item">
-                                <span class="meta-label">发布：</span>
-                                <span class="meta-value">2025-05-17</span>
-                            </span>
-                        </div>
-                        <div class="game-tags">
-                            <span class="tag-label">标签：</span>
-                            <div class="tag-items">
-                                <span class="tag">恐怖</span>
-                                <span class="tag">欢乐</span>
-                                <span class="tag">多结局</span>
-                                <span class="tag">冒险</span>
-                            </div>
-                        </div>
-                        <a href="#" class="download-btn">游戏下载 (2.57GB)</a>
                     </div>
                 </div>
             </div>
         </section>
+        
+    <!-- 全部内容 -->
+    <main class="container">
+        <!-- Windows系统（单列布局） -->
+        <section class="category" id="windows">
+           
+            <div class="downloads">
+                <div class="download-item">
+                    <img src="https://img.3dmgame.com/uploads/images/thumbkwdfirst/20180612/1528772396_505589.jpg" alt="Windows 10" class="system-icon">
+                    <div class="item-info">
+                        <h3>植物大战僵尸融合版2.4.2.zip</h3>
+                        <p>时间：2025年5月23日 | 大小:457MB</p>
+                    </div>
+                    <a href="https://www.123912.com/s/nprBTd-9Sw4" download class="download-btn" target="_blank">下载</a>
+                </div>
+            </div>
+
+            <div class="gd"></div>
+            <div class="downloads">
+                <div class="download-item">
+                    <img src="https://img.3dmgame.com/uploads/images/thumbkwdfirst/20180612/1528772396_505589.jpg" alt="Windows 10" class="system-icon">
+                    <div class="item-info">
+                        <h3>植物大战僵尸杂交版</h3>
+                        <p>时间：2025年5月23日 | 大小:457MB</p>
+                    </div>
+                    <a href="https://www.123912.com/s/nprBTd-QSw4" download class="download-btn" target="_blank">下载</a>
+                </div>
+            </div>
+
+            
+           
+        </section>
+
+     
+
+
     </main>
 
     <!-- 脚本 -->
@@ -357,35 +224,49 @@
             const searchInput = document.getElementById('search-input');
             let originalDisplayStates = new Map();
             
-            document.querySelectorAll('.category, .game-item').forEach(element => {
+            // 保存原始显示状态
+            document.querySelectorAll('.category, .download-item').forEach(element => {
                 originalDisplayStates.set(element, element.style.display);
             });
 
             searchInput.addEventListener('input', function() {
                 const searchTerm = this.value.trim().toLowerCase();
-                const items = document.querySelectorAll('.game-item');
+                const items = document.querySelectorAll('.download-item');
                 const categories = document.querySelectorAll('.category');
                 const categoryTitles = document.querySelectorAll('.category h2');
 
                 if (searchTerm === '') {
+                    // 恢复原始显示状态
                     categories.forEach(category => {
                         category.style.display = originalDisplayStates.get(category) || 'block';
                     });
                     items.forEach(item => {
                         item.style.display = originalDisplayStates.get(item) || 'flex';
                     });
+                    categoryTitles.forEach(title => title.style.display = 'block');
                     return;
                 }
 
+                // 隐藏所有分类标题
+                categoryTitles.forEach(title => title.style.display = 'none');
+                
                 let hasMatches = false;
                 items.forEach(item => {
                     const textContent = item.textContent.toLowerCase();
                     if (textContent.includes(searchTerm)) {
                         item.style.display = 'flex';
+                        item.closest('.category').style.display = 'block';
+                        item.closest('.downloads').style.maxWidth = '100%';
                         hasMatches = true;
                     } else {
                         item.style.display = 'none';
                     }
+                });
+
+                // 隐藏无匹配的分类
+                categories.forEach(category => {
+                    const visibleItems = category.querySelectorAll('.download-item[style*="display: flex"]');
+                    category.style.display = visibleItems.length > 0 ? 'block' : 'none';
                 });
             });
         });
