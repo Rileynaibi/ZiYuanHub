@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="giscus" class="giscus" data-giscus-config="light"></div>
+<script>
+    const giscus = document.createElement('script');
+    giscus.src = 'https://giscus.app/client.js';
+    giscus.setAttribute('data-repo', 'Rileynaibi/ZiYuanHub');
+    giscus.setAttribute('data-repo-id', '928783535');
+    giscus.setAttribute('data-category', 'comments');
+    giscus.setAttribute('data-category-id', 'your-category-id'); // 请替换为你的分类ID
+    giscus.setAttribute('data-mapping', 'pathname');
+    giscus.setAttribute('data-reactions-enabled', '1');
+    giscus.setAttribute('data-emit-metadata', '0');
+    giscus.setAttribute('data-input-position', 'top');
+    giscus.setAttribute('data-theme', 'light');
+    giscus.setAttribute('data-lang', 'zh-CN'); // 添加此行
+    giscus.setAttribute('crossorigin', 'anonymous');
+    giscus.setAttribute('async', 'true');
+    document.getElementById('giscus').appendChild(giscus);
+</script>
+</body>
+</html>
