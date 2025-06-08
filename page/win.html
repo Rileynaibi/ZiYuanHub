@@ -405,6 +405,9 @@ var _hmt = _hmt || [];
 
     </main>
 
+
+
+
     <!-- 新增提示框 -->
     <div id="copy-notice" style="display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #011802; color: white; padding: 15px 25px; border-radius: 5px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); z-index: 1000;">
         ✅ 已复制BT地址到剪贴板
@@ -481,5 +484,37 @@ var _hmt = _hmt || [];
             });
         });
     </script>
+
+    <script>
+function showImageModal(imgSrc) {
+    const modal = document.createElement('div');
+    modal.style = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: zoom-out;
+    `;
+    
+    const img = document.createElement('img');
+    img.src = imgSrc;
+    img.style = `
+        max-width: 80%;
+        max-height: 80%;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(255,215,0,0.5);
+    `;
+    
+    modal.onclick = () => document.body.removeChild(modal);
+    modal.appendChild(img);
+    document.body.appendChild(modal);
+}
+</script>
 </body>
 </html>
